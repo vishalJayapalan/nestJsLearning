@@ -1,0 +1,25 @@
+# POST http://localhost:3000/auth/signup
+# Content-Type: application/json
+
+# {
+#     "email": "vishal.jayapalan1@napses.com",
+#     "password": "123456789"
+# }
+
+# Find a perticulat user with a given ID
+# GET http://localhost:3000/auth/1
+
+
+# Find all the users with a given email
+# GET http://localhost:3000/auth?email=vishal.jayapalan@napses.com
+
+# Delete a user giben id
+# DELETE http://localhost:3000/auth/2
+
+# Update a user
+Patch http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+    "email": "vishal.jayapalan@napses.com"
+}
